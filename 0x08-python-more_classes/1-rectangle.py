@@ -1,27 +1,29 @@
 #!/usr/bin/python3
-"""class Rectangle that defines a rectangle by: (based on 0-rectangle.py)"""
+"""task 1 Module for the rectangle """
 
 
 class Rectangle:
     """class for the rectangle"""
     def __init__(self, width=0, height=0):
-        """ class argement
+        """  getter and setter's initalize values
+        Args:
             width(int) = rectangle width
             height(int) = rectangle height
         """
+
         self.width = width
         self.height = height
 
         @property
         def width(self):
-            """Getter - allows to gets width value"""
+            """Getter - allows to get width"""
             return self.__width
 
         @width.setter
         def width(self, value):
-            """setter- sets the value of width
+            """setter- sets the width
             Args:
-                value: the value to set to width
+                value(int): the value setted as width
             """
 
             if type(value) != int:
@@ -33,14 +35,14 @@ class Rectangle:
 
         @property
         def height(self):
-            """Getter - allows to get height"""
+            """Getter - gets height"""
             return self.__height
 
         @height.setter
         def height(self, value):
-            """ sets the value of height
+            """setter- sets height value
            Args:
-                value: the value to set to height
+                value(int): value setted as height
             """
 
             if type(value) != int:
