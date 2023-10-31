@@ -1,0 +1,66 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+>>> text_indentation("hey.")
+hey.
+<BLANKLINE>
+
+
+>>> text_indentation("Thise.?: is: how we do?")
+Thise.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+is:
+<BLANKLINE>
+how we do?
+<BLANKLINE>
+
+>>> text_indentation(20)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation(("ola", "hello"))
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+
+>>> text_indentation(["yo", "boy"])
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation(["mouad"])
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+
+>>> text_indentation({"hello"; "boy"})
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation("mouad")
+mouad
+
+
+>>> text_indentation("mouad"" edd")
+mouad edd
+
+
+>>> text_indentation("mouad.    edd")
+mouad.
+<BLANKLINE>
+edd
+
+
+>>> text_indentation("   my.    way.")
+my.
+<BLANKLINE>
+way.
+<BLANKLINE>

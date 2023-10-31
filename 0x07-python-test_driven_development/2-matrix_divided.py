@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+"""this is a test"""
 
 
 def matrix_divided(matrix, div):
+    """this is a test"""
 
     if not isinstance(matrix, list):
         raise TypeError("matrix must be a matrix"
@@ -30,3 +32,7 @@ def matrix_divided(matrix, div):
     n_matrix = [[round(idx / div, 2) for idx in mat] for mat in matrix]
 
     return n_matrix
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testfile("tests/2-matrix_divided.txt")

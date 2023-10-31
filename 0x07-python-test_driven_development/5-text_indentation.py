@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+"""this is a test"""
 
 
 def text_indentation(text):
+    """this is a test"""
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
@@ -15,3 +17,7 @@ def text_indentation(text):
             n_text = ""
     if element not in wild_c:
         print(n_text.strip(" "), end="")
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testfile("tests/5-text_indentation.txt")
