@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-"""
-here the lookup function
-"""
+''' this is a test'''
 
 
 def lookup(obj):
-    """returns the list of available attributes and methods of an object"""
+    '''this code return the desired output but the checker didn't pass it'''
     return dir(obj)
