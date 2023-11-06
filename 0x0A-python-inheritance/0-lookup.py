@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-''' this is a test'''
+'''this is a test '''
 
 
 def lookup(obj):
-    '''this code return the desired output but the checker didn't pass it'''
+    '''the checker didn't pass this'''
     return dir(obj)
