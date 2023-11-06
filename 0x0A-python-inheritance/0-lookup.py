@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-'''this is a test '''
+"""
+Contain lookup function
+"""
 
 
 def lookup(obj):
-    '''the checker didn't pass this'''
+    """list of available attributes and methods of an object"""
     return dir(obj)
