@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''this test '''
+'''this is a test '''
 
 
 def lookup(obj):
