@@ -5,7 +5,7 @@
 class BaseGeometry:
     '''this is a test'''
     def area(self):
-i        '''this is a test'''
+        '''this is a test'''
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
