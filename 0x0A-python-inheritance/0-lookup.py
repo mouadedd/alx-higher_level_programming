@@ -3,5 +3,5 @@
 
 
 def lookup(obj):
-        ''' this is a test '''
-        return dir(obj)
+    ''' this is a test '''
+    return dir(obj)
