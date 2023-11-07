@@ -15,5 +15,6 @@ class Student:
         '''this is a test'''
         if (type(attrs) == list and all
                 (type(elem) == str for elem in attrs)):
-            return {dic: getattr(self, dic) for dic in attrs if hasattr(self, dic)}
+            return {dic: getattr(self, dic) for
+                    dic in attrs if hasattr(self, dic)}
         return self.__dict__
