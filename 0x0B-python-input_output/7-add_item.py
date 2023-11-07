@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''this is a test'''
-import sys
+from sys import argv
 
 
 if __name__ == "__main__":
@@ -11,5 +11,6 @@ if __name__ == "__main__":
         itm = load_from_json_file("add_item.json")
     except FileNotFoundError:
         itm = []
-    itm.extend(sys.argv[1:])
+    for ar in argv[1:]:
+        itm.append(ar)
     save_to_json_file(itm, "add_item.json")
