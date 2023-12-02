@@ -7,3 +7,11 @@ def best_score(a_dictionary):
                 max = key
         return max
     return None
+'''
+    if a_dictionary:
+        tp = max(a_dictionary.values())
+        for k, v in a_dictionary.items():
+            if v == tp:
+                return k
+    return None
+'''
