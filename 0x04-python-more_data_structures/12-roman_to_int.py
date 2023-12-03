@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
+
 def roman_to_int(roman_string):
     roman_dict = {'I': 1, 'V': 5, 'X': 10, 'L': 50,
                   'C': 100, 'D': 500, 'M': 1000}
     nums = []
-    chif = int()
+    result = int()
 
-    if not roman_string or type(roman_string) is not str:
+    if not roman_string or not isinstance(roman_string, str):
         return 0
     else:
         for i in roman_string:
@@ -13,10 +14,11 @@ def roman_to_int(roman_string):
 
         for n in nums:
             if len(nums) == 1:
-                chif = n
+                result = n
             elif nums[-1] < nums[0]:
-                chif += n
+                result += n
             elif nums[-1] > nums[0]:
                 s = sum(nums[:-1])
-                chif = nums[-1] - s
-        return chif
+                result = nums[-1] - s
+        return result
+
