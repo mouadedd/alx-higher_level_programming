@@ -3,20 +3,23 @@
 
 
 def text_indentation(text):
-    """this is a test"""
-    if not isinstance(text, str):
-        raise TypeError("text must be a string")
+    """this code print a text with a break after each wild card('.' '?' ':')
+    except for the last line"""
 
-    wild_c = ['.', '?', ':']
-    n_text = ""
-    for element in text:
-        n_text += element
-        if element in wild_c:
-            n_text += "\n"
-            print(n_text.strip(" "))
-            n_text = ""
-    if element not in wild_c:
-        print(n_text.strip(" "), end="")
+    if type(text) is not str:
+        raise TypeError("text must be a string")
+    wildo = ['.', '?', ':']
+    ness = ""
+    for c in text:
+        ness += c
+        if c in wildo:
+            ness += "\n"
+            print(ness.strip())
+            print()
+            ness = ""
+    if c not in wildo:
+        print(ness.strip(), end="")
+
 
 if __name__ == "__main__":
     import doctest
